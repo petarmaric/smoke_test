@@ -1,0 +1,33 @@
+example:
+  input: |
+    5
+  expected-output: |
+    Unesite broj clanova reda:
+    clan[i=0] =  1.000000
+    clan[i=1] = -1.000000
+    clan[i=2] =  0.500000
+    clan[i=3] = -0.166667
+    clan[i=4] =  0.041667
+
+    sum = 0.375000
+
+    e = 2.666667
+
+
+n-is-too-low:
+  input: |
+    -2
+    -1
+    0
+
+    1
+  expected-output: |
+    Unesite broj clanova reda:
+    Unesite broj clanova reda:
+    Unesite broj clanova reda:
+    Unesite broj clanova reda:
+    clan[i=0] =  1.000000
+
+    sum = 1.000000
+
+    e = 1.000000

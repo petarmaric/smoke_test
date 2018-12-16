@@ -1,0 +1,3 @@
+invalid-path:
+  args: CANT/READ/FROM/FAKE/DIR/invalid-path.in $output_filename
+  expected-returncode: 1

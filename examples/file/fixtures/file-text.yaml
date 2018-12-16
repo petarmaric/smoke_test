@@ -1,0 +1,80 @@
+novi-sad:
+  args: $input_filename $output_filename
+  input: |
+    Cremansa   italijanski  4.3
+    Sekunda    italijanski  3.9
+    Inimigos   americki     4.5
+    LaCattura  italijanski  4.7
+    FutureFood americki     4.4
+    Eva        srpski       4.8
+    Kokoda     srpski       4.2
+  expected-output: |
+    4.8 Eva        srpski
+    4.7 LaCattura  italijanski
+    4.5 Inimigos   americki
+    4.4 FutureFood americki
+    4.3 Cremansa   italijanski
+    4.2 Kokoda     srpski
+    3.9 Sekunda    italijanski
+
+    Najgore ocenjen restoran u gradu je:
+    3.9 Sekunda    italijanski
+
+
+kraljevo:
+  args: $input_filename $output_filename
+  input: |
+    SaleDjodjo italijanski  4.4
+    PizzaSlow  italijanski  4.5
+  expected-output: |
+    4.5 PizzaSlow  italijanski
+    4.4 SaleDjodjo italijanski
+
+    Najgore ocenjen restoran u gradu je:
+    4.4 SaleDjodjo italijanski
+
+
+sorted-asc:
+  args: $input_filename $output_filename
+  input: |
+    Sekunda    italijanski  3.9
+    Kokoda     srpski       4.2
+    Cremansa   italijanski  4.3
+    FutureFood americki     4.4
+    Inimigos   americki     4.5
+    LaCattura  italijanski  4.7
+    Eva        srpski       4.8
+  expected-output: |
+    4.8 Eva        srpski
+    4.7 LaCattura  italijanski
+    4.5 Inimigos   americki
+    4.4 FutureFood americki
+    4.3 Cremansa   italijanski
+    4.2 Kokoda     srpski
+    3.9 Sekunda    italijanski
+
+    Najgore ocenjen restoran u gradu je:
+    3.9 Sekunda    italijanski
+
+
+sorted-desc:
+  args: $input_filename $output_filename
+  input: |
+    Eva        srpski       4.8
+    LaCattura  italijanski  4.7
+    Inimigos   americki     4.5
+    FutureFood americki     4.4
+    Cremansa   italijanski  4.3
+    Kokoda     srpski       4.2
+    Sekunda    italijanski  3.9
+  expected-output: |
+    4.8 Eva        srpski
+    4.7 LaCattura  italijanski
+    4.5 Inimigos   americki
+    4.4 FutureFood americki
+    4.3 Cremansa   italijanski
+    4.2 Kokoda     srpski
+    3.9 Sekunda    italijanski
+
+    Najgore ocenjen restoran u gradu je:
+    3.9 Sekunda    italijanski

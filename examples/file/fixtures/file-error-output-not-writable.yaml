@@ -1,0 +1,11 @@
+invalid-path:
+  args: $input_filename CANT/WRITE/TO/FAKE/DIR/invalid-path.out
+  input: |
+    Cremansa   italijanski  4.3
+    Sekunda    italijanski  3.9
+    Inimigos   americki     4.5
+    LaCattura  italijanski  4.7
+    FutureFood americki     4.4
+    Eva        srpski       4.8
+    Kokoda     srpski       4.2
+  expected-returncode: 2
