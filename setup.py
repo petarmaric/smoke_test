@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 setup(
     name='smoke_test',
     version='1.0.0',
-    url='https://bitbucket.org/petar/smoke_test',
+    url='https://github.com/petarmaric/smoke_test',
     license='BSD',
     author='Petar Maric',
     author_email='petarmaric@uns.ac.rs',
