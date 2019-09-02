@@ -1,0 +1,12 @@
+smoke_test 1.0.1 (September 2, 2019)
+====================================
+
+Bugfixes
+--------
+
+    * Migrated from Bitbucket (Mercurial) to GitHub (Git).
+
+smoke_test 1.0.0 (December 17, 2018)
+====================================
+
+    * Initial release.

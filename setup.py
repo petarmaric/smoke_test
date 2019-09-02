@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='smoke_test',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/petarmaric/smoke_test',
     license='BSD',
     author='Petar Maric',
