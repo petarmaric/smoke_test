@@ -32,8 +32,8 @@ setup(
     },
     install_requires=[
         'friendly_name_mixin~=1.0',
-        'pycparser==2.17',
-        'pycparserext==2016.2',
+        'pycparser==2.19',
+        'pycparser_fake_libc==2.19',
         'PyYAML~=3.11',
         'simple_plugins~=1.0',
     ],

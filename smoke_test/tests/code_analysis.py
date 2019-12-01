@@ -2,7 +2,7 @@ import hashlib
 import logging
 
 from pycparser import c_ast, parse_file
-from pycparserext.ext_c_parser import GnuCParser
+import pycparser_fake_libc
 
 from .base import BaseTest
 
@@ -19,7 +19,10 @@ class BaseSourceCodeAnalysisTest(BaseTest):
             self._ast_cache[file_hash] = parse_file(
                 self.source_code_filename,
                 use_cpp=True,
-                parser=GnuCParser(),
+                cpp_args=[
+                    '-nostdinc',
+                    '-I' + pycparser_fake_libc.directory,
+                ],
             )
 
         return self._ast_cache[file_hash]
