@@ -1,3 +1,12 @@
+smoke_test 1.0.2 (December 1, 2019)
+===================================
+
+Bugfixes
+--------
+
+    * Switched to "fake" libc headers, for improved compatibility with newer
+      versions of GCC.
+
 smoke_test 1.0.1 (September 2, 2019)
 ====================================
 
