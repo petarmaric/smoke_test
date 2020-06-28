@@ -1,3 +1,11 @@
+smoke_test 1.1.0 (June 28, 2020)
+================================
+
+Feature additions
+-----------------
+
+    * Added the ``--error-code`` CLI argument.
+
 smoke_test 1.0.2 (December 1, 2019)
 ===================================
 
