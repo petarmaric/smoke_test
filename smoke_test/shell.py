@@ -31,6 +31,14 @@ def main():
         help='Be very verbose, show debug information'
     )
     parser.add_argument(
+        '-e',
+        '--error-code',
+        action='store_const',
+        const=True,
+        dest='error_code',
+        help='Return error code 1 if a test fails'
+    )
+    parser.add_argument(
         '--version',
         action='version',
         version="%(prog)s " + __version__
@@ -47,6 +55,10 @@ def main():
         logging.info("Test stats: ok = %d, failed = %d, success rate = %d %%", num_ok, num_failed, success_rate)
     else:
         print success_rate
+
+    if args.error_code and num_failed:
+        exit(1)
+
 
 if __name__ == '__main__':
     main()
